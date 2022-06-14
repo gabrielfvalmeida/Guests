@@ -1,0 +1,75 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch V1
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   .idea/.gitignore
+#	new file:   .idea/compiler.xml
+#	new file:   .idea/gradle.xml
+#	new file:   .idea/misc.xml
+#	new file:   .idea/vcs.xml
+#	new file:   app/.gitignore
+#	new file:   app/build.gradle
+#	new file:   app/proguard-rules.pro
+#	new file:   app/src/androidTest/java/com/example/guests/ExampleInstrumentedTest.kt
+#	new file:   app/src/main/AndroidManifest.xml
+#	new file:   app/src/main/java/com/example/guests/GuestFormActivity.kt
+#	new file:   app/src/main/java/com/example/guests/MainActivity.kt
+#	new file:   app/src/main/java/com/example/guests/ui/AbsentFragment.kt
+#	new file:   app/src/main/java/com/example/guests/ui/AbsentViewModel.kt
+#	new file:   app/src/main/java/com/example/guests/ui/AllGuestsFragment.kt
+#	new file:   app/src/main/java/com/example/guests/ui/AllGuestsViewModel.kt
+#	new file:   app/src/main/java/com/example/guests/ui/PresentFragment.kt
+#	new file:   app/src/main/java/com/example/guests/ui/PresentViewModel.kt
+#	new file:   app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+#	new file:   app/src/main/res/drawable/ic_launcher_background.xml
+#	new file:   app/src/main/res/drawable/ic_menu_camera.xml
+#	new file:   app/src/main/res/drawable/ic_menu_gallery.xml
+#	new file:   app/src/main/res/drawable/ic_menu_slideshow.xml
+#	new file:   app/src/main/res/drawable/side_nav_bar.xml
+#	new file:   app/src/main/res/layout/activity_guest_form.xml
+#	new file:   app/src/main/res/layout/activity_main.xml
+#	new file:   app/src/main/res/layout/app_bar_main.xml
+#	new file:   app/src/main/res/layout/content_main.xml
+#	new file:   app/src/main/res/layout/fragment_absent.xml
+#	new file:   app/src/main/res/layout/fragment_all_guests.xml
+#	new file:   app/src/main/res/layout/fragment_present.xml
+#	new file:   app/src/main/res/layout/nav_header_main.xml
+#	new file:   app/src/main/res/menu/activity_main_drawer.xml
+#	new file:   app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+#	new file:   app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+#	new file:   app/src/main/res/mipmap-hdpi/ic_launcher.webp
+#	new file:   app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+#	new file:   app/src/main/res/mipmap-mdpi/ic_launcher.webp
+#	new file:   app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+#	new file:   app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+#	new file:   app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+#	new file:   app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+#	new file:   app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+#	new file:   app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+#	new file:   app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp
+#	new file:   app/src/main/res/navigation/mobile_navigation.xml
+#	new file:   app/src/main/res/values-land/dimens.xml
+#	new file:   app/src/main/res/values-night/themes.xml
+#	new file:   app/src/main/res/values-w1240dp/dimens.xml
+#	new file:   app/src/main/res/values-w600dp/dimens.xml
+#	new file:   app/src/main/res/values/colors.xml
+#	new file:   app/src/main/res/values/dimens.xml
+#	new file:   app/src/main/res/values/strings.xml
+#	new file:   app/src/main/res/values/themes.xml
+#	new file:   app/src/main/res/xml/backup_rules.xml
+#	new file:   app/src/main/res/xml/data_extraction_rules.xml
+#	new file:   app/src/test/java/com/example/guests/ExampleUnitTest.kt
+#	new file:   build.gradle
+#	new file:   gradle.properties
+#	new file:   gradle/wrapper/gradle-wrapper.jar
+#	new file:   gradle/wrapper/gradle-wrapper.properties
+#	new file:   gradlew
+#	new file:   gradlew.bat
+#	new file:   settings.gradle
+#
