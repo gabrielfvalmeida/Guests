@@ -27,7 +27,7 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         if(v.id == R.id.button_save){
             //teste
-            val s = 2
+            val s = 4
 
         }
     }
