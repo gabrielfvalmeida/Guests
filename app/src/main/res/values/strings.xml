@@ -13,4 +13,5 @@
     <string name="all_guests">Todos os Convidados</string>
     <string name="present">Presentes</string>
     <string name="absent">Ausentes</string>
+    <string name="name">Nome</string>
 </resources>
