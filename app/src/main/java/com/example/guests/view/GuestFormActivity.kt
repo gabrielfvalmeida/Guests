@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.guests.model.GuestModel
 import com.example.guests.R
 import com.example.guests.databinding.ActivityGuestFormBinding
+import com.example.guests.repository.GuestRepository
 import com.example.guests.viewmodel.GuestFormViewModel
 
 class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
@@ -35,7 +36,7 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
             val model = GuestModel(0,name,presence)
 
             viewModel.insert(model)
-
+            viewModel.update(model)
         }
     }
 }
