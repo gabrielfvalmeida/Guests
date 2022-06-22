@@ -1,21 +1,32 @@
 package com.example.guests.view.adapter
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.guests.databinding.RowGuestBinding
+import com.example.guests.model.GuestModel
 import com.example.guests.view.viewholder.GuestViewHolder
 
 class GuestsAdapter : RecyclerView.Adapter<GuestViewHolder>(){
 
+    private var guestList: List<GuestModel> = listOf()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuestViewHolder {
-        TODO()
+        val item = RowGuestBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return GuestViewHolder(item)
     }
 
     override fun onBindViewHolder(holder: GuestViewHolder, position: Int) {
-        TODO()
+        holder.bind(guestList[position])
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return guestList.count()
+    }
+
+    fun updateGuests(list: List<GuestModel>){
+        guestList = list
+        notifyDataSetChanged()
     }
 
 }
