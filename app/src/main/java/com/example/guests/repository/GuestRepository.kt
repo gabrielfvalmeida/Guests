@@ -111,6 +111,8 @@ class GuestRepository private constructor(context: Context) {
         return list
     }
 
+
+
     fun getPresent(): List<GuestModel> {
 
         val list = mutableListOf<GuestModel>()
@@ -165,34 +167,45 @@ class GuestRepository private constructor(context: Context) {
         return list
     }
 
-   /*
-    fun getFiltered(filter: Int): List<GuestModel> {
 
-        val list = mutableListOf<GuestModel>()
+    fun getFiltered(id: Int): GuestModel? {
+
+        var guest: GuestModel? = null
 
         try {
             val db = guestDataBase.readableDatabase
 
-            val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence = $filter", null)
+            val projection = arrayOf(
+                DataBaseConstants.GUEST.COLUMNS.ID,
+                DataBaseConstants.GUEST.COLUMNS.NAME,
+                DataBaseConstants.GUEST.COLUMNS.PRESENCE,
+            )
+
+            val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ?"
+
+            val args = arrayOf(id.toString())
+
+            val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence = $id", null)
+
+            val cursor1 = db.query(DataBaseConstants.GUEST.TABLE_NAME,projection, selection, args,null, null, null)
 
             if (cursor != null && cursor.count > 0) {
 
                 while (cursor.moveToNext()) {
 
-                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.ID))
                     val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.NAME))
                     val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.PRESENCE))
 
-                    list.add(GuestModel(id, name, presence == 1))
+                    guest = GuestModel(id, name, presence == 1)
                 }
             }
             cursor.close()
         } catch (e: Exception) {
-            return list
+            return guest
         }
-        return list
+        return guest
     }
-    */
+
 
 
 }

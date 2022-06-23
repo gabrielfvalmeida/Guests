@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <TextView
         android:id="@+id/text_name"
@@ -10,5 +10,6 @@
         android:layout_height="wrap_content"
         android:text="convidado"
         android:textSize="24sp"/>
+
 
 </LinearLayout>
