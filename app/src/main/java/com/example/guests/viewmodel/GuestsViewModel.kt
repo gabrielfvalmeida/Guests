@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import com.example.guests.model.GuestModel
 import com.example.guests.repository.GuestRepository
 
-class AllGuestsViewModel(application: Application) : AndroidViewModel(application){
+class GuestsViewModel(application: Application) : AndroidViewModel(application){
 
     private val repository = GuestRepository.getInstance(application.applicationContext)
 
@@ -17,6 +17,14 @@ class AllGuestsViewModel(application: Application) : AndroidViewModel(applicatio
 
     fun getAll(){
         allGuests.value = repository.getAll()
+    }
+
+    fun getPresent(){
+        allGuests.value = repository.getPresent()
+    }
+
+    fun getAbsent(){
+        allGuests.value = repository.getAbsent()
     }
 
     fun delete(id: Int){

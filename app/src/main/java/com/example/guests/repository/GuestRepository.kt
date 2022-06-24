@@ -185,9 +185,9 @@ class GuestRepository private constructor(context: Context) {
 
             val args = arrayOf(id.toString())
 
-            val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence = $id", null)
+            //val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence = $id", null) não usar
 
-            val cursor1 = db.query(DataBaseConstants.GUEST.TABLE_NAME,projection, selection, args,null, null, null)
+            val cursor = db.query(DataBaseConstants.GUEST.TABLE_NAME,projection, selection, args,null, null, null)
 
             if (cursor != null && cursor.count > 0) {
 
